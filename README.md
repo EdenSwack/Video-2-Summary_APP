@@ -13,18 +13,16 @@ Installation
 Ensure you have Python installed on your system.
 
 Install the required Python packages by running the following commands:
-
-Copy code
 pip install flask
 pip install flask-cors
+
 Usage
 Clone this repository to your local machine.
 
 Navigate to the project directory:
 
-bash
-Copy code
 cd Video_Translation_Web_App
+
 Start the Flask development server by running the following command:
 Copy code
 python Flask_app.py
