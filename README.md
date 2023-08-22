@@ -40,6 +40,7 @@ User-friendly and responsive web interface.
   * requests
 
 **Acknowledgments**
+
 This project utilizes Hugging Face's state-of-the-art neural network models for natural language processing.
 Microsoft Translation API is employed for accurate language translation.
 Special thanks to the open-source community for providing the tools and resources necessary for this project.
