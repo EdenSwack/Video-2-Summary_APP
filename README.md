@@ -27,13 +27,15 @@ pip install moviepy
 
 2. Start the Flask development server by running the following command:
 
-3. python Flask_app.py
-   
-4. Open your web browser and go to http://localhost:5000 to access the web app.
+3. Run the following command in your terimnal to run the server for hosting the web app
+   ```bash
+   python Flask_app.py
+   ```
+5. Open your web browser and go to http://localhost:5000 to access the web app.
 
-5. Upload a video file and select the desired output language using the web app UI.
+6. Upload a video file and select the desired output language using the web app UI.
 
-6. Click the "Translate" button to initiate the translation and summarization process.
+7. Click the "Translate" button to initiate the translation and summarization process.
 
 ## Dependencies
   * Flask
