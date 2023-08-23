@@ -3,39 +3,38 @@
 This is a web application that allows users to upload a video, select an output language, and utilize various API calls to perform translation and summarization tasks. The application integrates Hugging Face neural network models, the Microsoft Translation endpoint, and custom Python functions to provide accurate and concise translations of videos into the desired output language.
 
 ## Features
-Upload a video file for translation and summarization.
-Select input and output languages from a list of options.
-Utilize Hugging Face neural network models for audio-to-text conversion.
-Integrate Microsoft Translation API for language translation.
-Apply custom Python functions for text summarization.
-User-friendly and responsive web interface.
+* Upload a video file for translation and summarization.
+* Select input and output languages from a list of options.
+* Utilize Hugging Face neural network models for audio-to-text conversion.
+* Integrate Microsoft Translation API for language translation.
+* Apply custom Python functions for text summarization.
+* User-friendly and responsive web interface.
 
 
 ## Installation
-1. Ensure you have Python installed on your system.
-2. Install the required Python packages by running the following commands:
+**1.** Ensure you have Python installed on your system.
+**2.** Install the required Python packages by running the following commands:
 ```bash
 pip install flask
 pip install flask-cors
 pip install moviepy
  ```
 ## Usage
-1. Clone this repository to your local machine.
+**1.** Clone this repository to your local machine.
 
-2. Navigate to the project directory:
-    cd Video_Translation_Web_App
-
-2. Start the Flask development server by running the following command:
-
-3. Run the following command in your terimnal to run the server for hosting the web app
+**2.** Navigate to the project directory:
+ ```bash
+ cd Video_Translation_Web_App
+```
+**4.** Run the following command in your terimnal to run the server for hosting the web app
    ```bash
    python Flask_app.py
    ```
-5. Open your web browser and go to http://localhost:5000 to access the web app.
+**5.** Open your web browser and go to http://localhost:5000 to access the web app.
 
-6. Upload a video file and select the desired output language using the web app UI.
+**6**. Upload a video file and select the desired output language using the web app UI.
 
-7. Click the "Translate" button to initiate the translation and summarization process.
+**7**. Click the "Translate" button to initiate the translation and summarization process.
 
 ## Dependencies
   * Flask
