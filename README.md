@@ -27,10 +27,10 @@ pip install moviepy
  cd Video_Translation_Web_App
 ```
 
-**3.** Copy and paste your API tokens for HuggingFace and Microsoft to access the needed endpoints
+**3.** Copy and paste your API tokens/keys for HuggingFace and Microsoft to access the needed endpoints
 ```bash
 HF_KEY = {"Authorization": "Your HuggingFace API key here"}
-MSFT_KEY = "Your API key for microsoft endpoint here"
+MSFT_KEY = "Your microsoft API key here"
 ```
 
 **4.** Run the following command in your terimnal to run the server for hosting the web app
