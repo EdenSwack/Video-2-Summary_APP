@@ -15,8 +15,8 @@ User-friendly and responsive web interface.
 1. Ensure you have Python installed on your system.
 2. Install the required Python packages by running the following commands:
 ```bash
-  * pip install flask
-  * pip install flask-cors
+  pip install flask
+  pip install flask-cors
  ```
 ## Usage
 1. Clone this repository to your local machine.
