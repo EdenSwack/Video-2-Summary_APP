@@ -13,6 +13,7 @@ This is a web application that allows users to upload a video, select an output 
 
 ## Installation
 **1.** Ensure you have Python installed on your system.
+
 **2.** Install the required Python packages by running the following commands:
 ```bash
 pip install flask
