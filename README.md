@@ -50,16 +50,14 @@ MSFT_KEY = "Your microsoft API key here"
   * moviepy
   * requests
 
-## Libaries and models used
+## Libaries and models used (tranformers)
 
-Library_name: transformers
-
-* Library 1: OpenAI
+**Library 1: OpenAI**
 
 - Model Name: whisper-large-v2
 - Model URL: OpenAI Whisper Large v2
 
-* Library 2: Facebook
+**Library 2: Facebook**
 
 - Model Name: bart-large-cnn
 - Model URL: Facebook BART Large CNN
