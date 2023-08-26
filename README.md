@@ -50,9 +50,28 @@ MSFT_KEY = "Your microsoft API key here"
   * moviepy
   * requests
 
+## Libaries and models used
+
+Library_name: transformers
+
+* Library 1: OpenAI
+
+- Model Name: whisper-large-v2
+- Model URL: OpenAI Whisper Large v2
+
+* Library 2: Facebook
+
+- Model Name: bart-large-cnn
+- Model URL: Facebook BART Large CNN
+
 ## Acknowledgments
 
 This project utilizes Hugging Face's state-of-the-art neural network models for natural language processing.
+It uses to pre-trained models from Hugging Face and calls them via API endpoint.
+Libaries and models used
+1. Audio to text: Open AI's Whisper model
+2. Summarize text: Facebooks's Bart CNN model
+   
 Microsoft Translation API is employed for accurate language translation.
 Special thanks to the open-source community for providing the tools and resources necessary for this project.
 License
