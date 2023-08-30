@@ -1,4 +1,4 @@
-# Video Summarization Web APP using NN
+# Video Summarization Web App using NN
 
 This is a web application that allows users to upload a video, select an output language, and utilize various API calls to perform translation and summarization tasks. The application integrates Hugging Face neural network models, the Microsoft Translation endpoint, and custom Python functions to provide accurate and concise translations of videos into the desired output language.
 
