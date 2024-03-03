@@ -1,18 +1,16 @@
 const form = document.getElementById("form");
 const resultElement = document.getElementById("result");
-const endpointUrl = "http://127.0.0.1:5000/process_video";
+const endpointUrl = "http://127.0.0.1:8080/process_video";
 
-//Action when user presses the action button
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
     const videoFile = document.getElementById("videoInput").files[0];
 
-    // Get desired input language by user
     const inputLangSelect = document.getElementById("inputLangSelect");
     const inputLang = inputLangSelect.options[inputLangSelect.selectedIndex].value;
 
-    // Get desired input language by user
+
     const outputLangSelect = document.getElementById("outputLangSelect");
     const outputLang = outputLangSelect.options[outputLangSelect.selectedIndex].value;
 
@@ -21,18 +19,18 @@ form.addEventListener("submit", async (e) => {
     formData.append('inputLang', inputLang);
     formData.append('outputLang', outputLang);
 
-    //post to endpoint
+    // Show loading animation
+    resultElement.innerHTML = '<div class="loading">Loading...</div>';
+
     try {
         const response = await fetch(endpointUrl, {
             method: 'POST',
             body: formData
-        }
-        );
+        });
 
         const result = await response.text();
         console.log(response);
         resultElement.innerText = result;
-
 
     } catch (error) {
         resultElement.innerText = "Video Sending Failed!";
