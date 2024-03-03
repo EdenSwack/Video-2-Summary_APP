@@ -3,16 +3,15 @@ import requests
 from moviepy.editor import *
 import uuid
 
-# API endpoints and keys
 A2T_URL = "https://api-inference.huggingface.co/models/openai/whisper-large-v2"
 SUM_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"
 TRANSLATE = "https://api.cognitive.microsofttranslator.com/"
 
-HF_KEY = {"Authorization": "Your HuggingFace API key here"}
-MSFT_KEY = "Your API key for microsoft endpoint here"
+#HF_KEY = {"Authorization": "Bearer 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"}
+HF_KEY = {"Authorization": "Bearer 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"}
+MSFT_KEY = "1865c0567eba4ab68f35ebf433aa85cb"
 
 
-# Function that translates audio to text
 def aud2text(filename):
     with open(filename, "rb") as f:
         data = f.read()
@@ -21,25 +20,22 @@ def aud2text(filename):
     return response.json()
 
 
-# Function that summarizes text
 def Summarize(payload):
     response = requests.post(SUM_URL, headers=HF_KEY, json=payload)
     return response.json()
 
 
-# Function that call main function that uses other funcs to turn an uploaded
-# video into a text summary
 def Vid2Sum(vid_file):
     video = VideoFileClip(vid_file)
     audio_file = "C:\\temp2\\converted_audio.mp3"
     video.audio.write_audiofile(audio_file)
 
     text = aud2text(audio_file)
+    print("test: ",text)
     sum_text = Summarize(text["text"])
     return sum_text[0]["summary_text"]
 
 
-# Tranlates text to desired output text by user
 def translate(text, input_lang, output_lang):
     params = {
         "api-version": "3.0",
@@ -68,7 +64,6 @@ def translate(text, input_lang, output_lang):
         return None
 
 
-# Gets the correct abbreaviation of languafe selection
 def get_language_code(language):
     language_mapping = {
         "english": "en",
