@@ -99,6 +99,7 @@ h1 {
     align-items: center;
 }
 
+
 .result-container {
     text-align: center;
     margin-top: 20px;
@@ -107,4 +108,32 @@ h1 {
 
 .result-container h2 {
     font-size: 24px;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.loading::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border: 3px solid #ccc;
+    border-radius: 50%;
+    border-top-color: #333;
+    animation: spin 1s linear infinite;
+    /* Animation */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
