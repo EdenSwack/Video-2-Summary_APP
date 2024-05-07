@@ -1,6 +1,8 @@
 # Video Summarization Web App using NN
 
-This is a web application that allows users to upload a video, select an output language, and utilize various API calls to perform translation and summarization tasks. The application integrates Hugging Face neural network models, the Microsoft Translation endpoint, and custom Python functions to provide accurate and concise translations of videos into the desired output language.
+This web application allows users to upload a video (of a class, lesson or any informative video with speech audio), select an output language, and create a summary ready for note taking and studying. The application integrates Hugging Face neural network models, the Microsoft Translation endpoint, and custom Python functions to provide accurate and concise translations of videos into the desired output language.
+
+The inspiration for this project was to help with the challenges students (such as myself at the time) faced during the COVID-19 pandemic and additionally wartime disruptions when many classes transitioned to online formats. As a student, I found it difficult to engage with lengthy video lectures and retain key information in hours-long video lectures full of important information. Recognizing this widespread struggle, I sought to develop an AI app that could streamline the learning process by generating concise written summaries from these video classes. This tool aimed to enhance accessibility and comprehension for students like myself, providing a way to efficiently review and study complex material without the need to rewatch entire lectures. By harnessing technology to condense information into manageable formats, I hoped to empower learners and make education more adaptable during these challenging times.
 
 ## Features
 * Upload a video file for translation and summarization.
